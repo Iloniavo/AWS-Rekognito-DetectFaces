@@ -2,7 +2,7 @@ import React, {  useState } from 'react';
 import * as AWS from 'aws-sdk';
 import atob from 'atob';
 import Card from './Card'
-import LoadingSpinner from "./Spinner";
+import LoadingSpinner from "./spinner";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faSmile } from '@fortawesome/free-regular-svg-icons'
 import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
