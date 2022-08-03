@@ -14,7 +14,6 @@ export default function Main(): JSX.Element{
     const [ res , setRes ] = useState<any>();
     const [ imgSrc , setImgSrc ] = useState<string>("")
     const [ isLoading, setIsLoading ] = useState<boolean>(false)
-    const image = document.getElementById('#img')
     
     function DetectFaces(imageData: any, ) {
       var rekognition = new AWS.Rekognition({ region: `${process.env.REACT_APP_REGION}` });
