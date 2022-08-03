@@ -128,7 +128,7 @@ export default function Main(): JSX.Element{
                  res ? <> 
                  <div className='contain'>
                 <div className='inputt' style={{position: 'relative'}}>
-                <div className='border' id='border'></div>
+                <div className='border' style={{ border :'2px solid red'}} id='border'></div>
                         <img src={imgSrc} id='img' onLoad={ (e: any)=>{getPosition(e, res)}} />
                 </div>                 
                 <div className='output'>
@@ -142,7 +142,8 @@ export default function Main(): JSX.Element{
                          color: 'red'
                      }}>
                        <FontAwesomeIcon icon={faTriangleExclamation} style={{marginTop: '3%' , fontSize: '150%' }}/>
-                      <p>ERROR</p>  </div>
+                      <p>ERROR</p>  
+                      <p style={{marginTop: '-3vh'}}>Missing Credentials or network issues</p></div>
                  </div>
                    }
                    
